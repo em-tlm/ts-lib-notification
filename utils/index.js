@@ -22,5 +22,6 @@ function transformToRegex(string) {
     if (string.indexOf('*') === 0) {
         string = '.' + string;
     }
+    string = '^' + string + '$';
     return string;
 }
