@@ -152,4 +152,26 @@ Emitted after the notification is dispatched
 ####.emit('error', error)
 Emitted after an error has occured. The original `notification` can be accessed at `error.notification`
 
-**Note:** It's your responsibility to listen to these events and track them properly
+**Note:** It's your responsibility to listen to these events and track
+them properly
+
+## `config.env` and notifications
+
+**Note:** ts-cloud is using `process.env.NODE_ENV` as `config.env`
+
+### `config.env == 'test'`
+
+All text, email, call action will succeed, but no notification will be
+sent out.
+
+### `config.env != 'production'`
+
+Email subject will be `[${config.env}]{subject}`.
+
+### `config.env != 'local'`
+
+* Text callback will be `${config.baseURL}/notification/text/callback`
+
+* Phone callback will be `${config.baseURL}/notification/call/callback`
+
+* Email bcc will be `config.email.bcc`
