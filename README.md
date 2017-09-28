@@ -143,13 +143,13 @@ Exposes and `EventEmitter` that you can attach listeners to.
 #### `.startWorker(queue)`
 Use this function if you want to use queues to buffer notifications before they are actually sent.  `queue` must be compatible with `QueueAdapter`.
 
-###Events
+### Events
 
-####.emit('create', notification)
+#### .emit('create', notification)
 Emitted right after `Notification.send()` is called.
-####.emit('dispatch', notification)
+#### .emit('dispatch', notification)
 Emitted after the notification is dispatched
-####.emit('error', error)
+#### .emit('error', error)
 Emitted after an error has occured. The original `notification` can be accessed at `error.notification`
 
 **Note:** It's your responsibility to listen to these events and track
