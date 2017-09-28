@@ -161,7 +161,7 @@ them properly
 
 ### `config.env == 'test'`
 
-All text, email, call action will succeed, but no notification will be
+All text, email, call action will succeed, but no notifications will be
 sent out.
 
 ### `config.env != 'production'`
@@ -170,8 +170,8 @@ Email subject will be `[${config.env}]{subject}`.
 
 ### `config.env != 'local'`
 
-* Text callback will be `${config.baseURL}/notification/text/callback`
+* Text callback will use `${config.baseURL}/notification/text/callback`
 
-* Phone callback will be `${config.baseURL}/notification/call/callback`
+* Phone callback will use `${config.baseURL}/notification/call/callback`
 
-* Email bcc will be `config.email.bcc`
+* Email bcc will use `config.email.bcc`
