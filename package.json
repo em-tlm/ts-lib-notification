@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-notification",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "Notification module for TetraScience. Supports email, sms, and phone call!",
   "main": "index.js",
   "scripts": {
