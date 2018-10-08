@@ -1,12 +1,10 @@
 /**
  * Created by pengwei on 2/18/16.
  */
+const formatter = require('./lib/NotificationFormatter');
+const helper = require('./lib/NotificationHelper');
 
-
-var formatter = require('./lib/NotificationFormatter');
-var helper = require('./lib/NotificationHelper');
-
-function init(config, template, emailPath){
+function init(config, template, emailPath) {
     formatter.setTemplates(emailPath, template);
     helper.init(config);
 }

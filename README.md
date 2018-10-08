@@ -1,10 +1,10 @@
 # ts-notification
 
-ts-notification is a module for sending notifications to TetraScience users.  It supports emails, test messages, and phone calls.  
+ts-notification is a module for sending notifications to TetraScience Cloud (labops) users.  It supports emails, test messages, and phone calls.
 
 ## Installation
 ```sh
-$ npm install tetrascience/ts-notification --save
+$ yarn add tetrascience/ts-lib-notification
 ```
 
 ## Usage

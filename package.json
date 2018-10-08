@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-notification",
-  "version": "0.9.8",
+  "version": "1.0.0",
   "description": "Notification module for TetraScience. Supports email, sms, and phone call!",
   "main": "index.js",
   "scripts": {
@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/tetrascience/ts-notification#readme",
   "dependencies": {
-    "aws-sdk": "^2.2.37",
-    "ejs": "^2.4.1",
-    "email-templates": "^2.1.0",
-    "nodemailer": "^2.2.0",
-    "nodemailer-ses-transport": "^1.3.0",
-    "q": "^1.4.1",
-    "string-format": "^0.5.0",
-    "twilio": "^2.9.0"
+    "aws-sdk": "^2.329.0",
+    "bluebird": "^3.5.2",
+    "email-templates": "^2.7.1",
+    "nodemailer": "^4.6.8",
+    "nodemailer-ses-transport": "^1.5.1",
+    "string-format": "^2.0.0",
+    "twilio": "^3.22.0"
   },
   "devDependencies": {
-    "assert": "^1.3.0"
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.3"
   }
 }
