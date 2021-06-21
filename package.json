@@ -22,7 +22,7 @@
     "email-templates": "^2.7.1",
     "nodemailer": "^6.4.17",
     "string-format": "^2.0.0",
-    "twilio": "^3.22.0"
+    "twilio": "^3.64.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
